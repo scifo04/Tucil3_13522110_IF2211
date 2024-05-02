@@ -42,22 +42,22 @@ Program ini membutuhkan Java setidaknya versi 20.0.2
 
 ## **Home Page**
 <p align="center">
-<img src="test/HomePage.png">
+<img src="test/MainPage.png">
 </p>
 
 ## **Test**
 <p align="center">
 
-Input:
-<img src="test/input/test_06_in.png">
+Input dan output algoritma UCS:
+<img src="test/UCS_out1.png">
 
-Output algoritma brute force:
+Input dan Output algoritma GBFS:
 
-<img src="test/output/algoritma brute force/test_06_bruteforce.png">
+<img src="test/GBFS_out2.png">
 
-Output algoritma divide and conquer:
+Input dan Output algoritma A*:
 
-<img src="test/output/algoritma divide and conquer/test_06_dnc.png">
+<img src="test/AStar_out3.png">
 </p>
 
 ## **Author**

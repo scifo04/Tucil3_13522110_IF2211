@@ -49,10 +49,10 @@ public class Interface extends JFrame implements ItemListener {
 
         // Initialize the result panel
         resultPanel = new JPanel(new BorderLayout());
-        resultPanel.setPreferredSize(new Dimension(350, 200));
+        resultPanel.setPreferredSize(new Dimension(350, 400));
         f.add(resultPanel);
 
-        f.setSize(700, 500);
+        f.setSize(800, 700);
         f.setVisible(true);
         f.setLocationRelativeTo(null);
         f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); // Close terminal when pressing x
@@ -71,8 +71,10 @@ public class Interface extends JFrame implements ItemListener {
                         eng.Start(starte, ende, 3);
                     }
                     DefaultListModel<String> listModel = new DefaultListModel<>();
-                    listModel.addElement("Execution time: " + Long.toString(eng.getExec()) + " ms");
-                    listModel.addElement("Score: " + eng.getMessage().length);
+                    if (!(eng.getMessageGet(0).equals("Solution not found") || eng.getMessageGet(0).equals("Please insert proper english word!"))) {
+                        listModel.addElement("Execution time: " + Long.toString(eng.getExec()) + " ms");
+                        listModel.addElement("Score: " + (eng.getMessage().length-1));
+                    }
                     for (int i = 0; i < eng.getMessage().length; i++) {
                         listModel.addElement(eng.getMessageGet(i));
                     }

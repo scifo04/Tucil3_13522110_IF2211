@@ -30,6 +30,9 @@ public class Search {
                     return tracker;
                 }
             }
+            if (cont.size() <= 0) {
+                return new Node("Solution not found", null, 0);
+            }
         }
     }
 }

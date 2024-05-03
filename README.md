@@ -1,4 +1,4 @@
-# Tucil3_13522110_IF2211 Penyelesaian Permainan Word Ladder Menggunakan Algoritma UCS, Greedy Best First Search, dan A*
+# Tugas Kecil 3 Strategi Algoritma IF2211 Penyelesaian Permainan Word Ladder Menggunakan Algoritma UCS, Greedy Best First Search, dan A*
 
 > IF2211 Strategi Algoritma 2023/2024
 
@@ -25,7 +25,7 @@ Program ini membutuhkan Java setidaknya versi 20.0.2
 
 ## **Set Up dan Build Program**
 1. Download file .zip
-2. Buka terminal dan pergi ke direktori dari src 
+2. Buka terminal dan pergi ke direktori root aplikasi 
      ```bash
      ./Tucil3_13522110_IF2211
      ```
@@ -38,24 +38,44 @@ Program ini membutuhkan Java setidaknya versi 20.0.2
      cd src
      java Main
      ```
-8. Program sudah siap untuk digunakan
+5. Program sudah siap untuk digunakan
 
 ## **Home Page**
 <p align="center">
 <img src="test/MainPage.png">
 </p>
 
+## **Cara Menggunakan Program** ##
+1. Masukkan input dari kata pertama
+2. Masukkan input dari kata tujuan
+3. Pilih metode antara algoritma UCS, GBFS, dan A*
+4. Klik tombol "Submit"
+5. Tunggu beberapa saat agar solusi bisa terlihat
+
 ## **Test**
 <p align="center">
 
-Input dan output algoritma UCS:
+Input algoritma UCS:
+
+<img src="test/UCS_in1.png">
+
+Output algoritma UCS:
+
 <img src="test/UCS_out1.png">
 
-Input dan Output algoritma GBFS:
+Input algoritma GBFS:
+
+<img src="test/GBFS_in2.png">
+
+Output algoritma GBFS:
 
 <img src="test/GBFS_out2.png">
 
-Input dan Output algoritma A*:
+Input algoritma A*:
+
+<img src="test/AStar_in3.png">
+
+Output algoritma A*:
 
 <img src="test/AStar_out3.png">
 </p>

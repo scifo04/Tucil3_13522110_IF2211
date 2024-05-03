@@ -1,4 +1,4 @@
-# Tucil3_13522110_IF2211 Penyelesaian Permainan Word Ladder Menggunakan Algoritma UCS, Greedy Best First Search, dan A*
+# Tugas Kecil 3 Strategi Algoritma IF2211 Penyelesaian Permainan Word Ladder Menggunakan Algoritma UCS, Greedy Best First Search, dan A*
 
 > IF2211 Strategi Algoritma 2023/2024
 

@@ -48,15 +48,22 @@ Program ini membutuhkan Java setidaknya versi 20.0.2
 ## **Test**
 <p align="center">
 
-Input dan output algoritma UCS:
+Input algoritma UCS:
+<img src="test/UCS_in1.png">
+
+Output algoritma UCS:
 <img src="test/UCS_out1.png">
 
-Input dan Output algoritma GBFS:
+Input algoritma GBFS:
+<img src="test/GBFS_in2.png">
 
+Output algoritma GBFS:
 <img src="test/GBFS_out2.png">
 
-Input dan Output algoritma A*:
+Input algoritma A*:
+<img src="test/AStar_in3.png">
 
+Output algoritma A*:
 <img src="test/AStar_out3.png">
 </p>
 

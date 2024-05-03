@@ -38,12 +38,19 @@ Program ini membutuhkan Java setidaknya versi 20.0.2
      cd src
      java Main
      ```
-8. Program sudah siap untuk digunakan
+5. Program sudah siap untuk digunakan
 
 ## **Home Page**
 <p align="center">
 <img src="test/MainPage.png">
 </p>
+
+## **Cara Menggunakan Program** ##
+1. Masukkan input dari kata pertama
+2. Masukkan input dari kata tujuan
+3. Pilih metode antara algoritma UCS, GBFS, dan A*
+4. Klik tombol "Submit"
+5. Tunggu beberapa saat agar solusi bisa terlihat
 
 ## **Test**
 <p align="center">

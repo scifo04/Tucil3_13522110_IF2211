@@ -25,7 +25,7 @@ Program ini membutuhkan Java setidaknya versi 20.0.2
 
 ## **Set Up dan Build Program**
 1. Download file .zip
-2. Buka terminal dan pergi ke direktori dari src 
+2. Buka terminal dan pergi ke direktori root aplikasi 
      ```bash
      ./Tucil3_13522110_IF2211
      ```

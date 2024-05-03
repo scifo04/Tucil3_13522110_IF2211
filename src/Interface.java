@@ -73,6 +73,7 @@ public class Interface extends JFrame implements ItemListener {
                     DefaultListModel<String> listModel = new DefaultListModel<>();
                     if (!(eng.getMessageGet(0).equals("Solution not found") || eng.getMessageGet(0).equals("Please insert proper english word!"))) {
                         listModel.addElement("Execution time: " + Long.toString(eng.getExec()) + " ms");
+                        listModel.addElement("Memory taken: "+eng.getMem()+" MB");
                         listModel.addElement("Score: " + (eng.getMessage().length-1));
                     }
                     for (int i = 0; i < eng.getMessage().length; i++) {

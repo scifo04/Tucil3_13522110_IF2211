@@ -8,6 +8,7 @@ public class Engine {
     private Node resultado;
     private String[] message;
     private long exec;
+    private long runtime;
 
     public Engine() {
         this.start = new Node();
@@ -21,6 +22,9 @@ public class Engine {
     }
     public long getExec() {
         return exec;
+    }
+    public long getMem() {
+        return runtime;
     }
     public void Start(String start, String end, int choice) {
         this.dictionary = FileController.readToList();
@@ -52,8 +56,10 @@ public class Engine {
             default:
                 break;
         }
+        Runtime runtime = Runtime.getRuntime();
         long endTime = System.currentTimeMillis();
         this.message = this.resultado.moveToList();
         this.exec = endTime-startTime;
+        this.runtime = (runtime.totalMemory()-runtime.freeMemory())/(1024L*1024L);
     }
 }

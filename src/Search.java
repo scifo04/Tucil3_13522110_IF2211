@@ -21,6 +21,9 @@ public class Search {
             }
             temp = Util.getPossibleValues(gottenCostElement, this.dictionary, end, choice);
             sizeRef = temp.size();
+            if (choice.equals("GBFS")) {
+                cont.removeAll(cont);
+            }
             for (int i = 0; i < sizeRef; i++) {
                 tracker = temp.poll();
                 if (tracker != null) {

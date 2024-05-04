@@ -9,6 +9,7 @@ public class Engine {
     private String[] message;
     private long exec;
     private long runtime;
+    private int visited;
 
     public Engine() {
         this.start = new Node();
@@ -25,6 +26,9 @@ public class Engine {
     }
     public long getMem() {
         return runtime;
+    }
+    public int getVisited() {
+        return visited;
     }
     public void Start(String start, String end, int choice) {
         this.dictionary = FileController.readToList();
@@ -61,5 +65,6 @@ public class Engine {
         this.message = this.resultado.moveToList();
         this.exec = endTime-startTime;
         this.runtime = (runtime.totalMemory()-runtime.freeMemory())/(1024L*1024L);
+        this.visited = results.getVisited();
     }
 }

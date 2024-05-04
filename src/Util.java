@@ -94,4 +94,22 @@ public class Util {
         }
         return temp_list;
     }
+
+    public static ArrayList<Node> toList(PriorityQueue<Node> pq) {
+        PriorityQueue<Node> pq2 = new PriorityQueue<Node>(pq);
+        ArrayList<Node> liste = new ArrayList<>();
+        while (pq2.size() > 0) {
+            Node n = new Node();
+            n = pq2.poll();
+            liste.add(n);
+        }
+        return liste;
+    }
+
+    public static void printList(ArrayList<Node> liste) {
+        for (int i = 0; i < liste.size(); i++) {
+            System.out.print(liste.get(i).getInfo()+" ");
+        }
+        System.out.println();
+    }
 }

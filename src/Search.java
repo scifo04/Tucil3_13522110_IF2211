@@ -4,8 +4,14 @@ import java.util.PriorityQueue;
 public class Search {
     private HashMap<String,Boolean> dictionary;
 
+    private int visited;
+
     public Search(final HashMap<String,Boolean> dictionary) {
         this.dictionary = dictionary;
+    }
+
+    public int getVisited() {
+        return visited;
     }
 
     public Node SearchSolution(Node start, String end, HashMap<String,Boolean> dict, PriorityQueue<Node> cont, String choice) {
@@ -18,6 +24,7 @@ public class Search {
                 gottenCostElement = new Node(start);
             } else {
                 gottenCostElement = cont.poll();
+                visited++;
             }
             temp = Util.getPossibleValues(gottenCostElement, this.dictionary, end, choice);
             sizeRef = temp.size();

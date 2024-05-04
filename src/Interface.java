@@ -76,6 +76,7 @@ public class Interface extends JFrame implements ItemListener {
                         listModel.addElement("Memory taken: "+eng.getMem()+" MB");
                         listModel.addElement("Score: " + (eng.getMessage().length-1));
                     }
+                    listModel.addElement("Words visited: "+(eng.getVisited()));
                     for (int i = 0; i < eng.getMessage().length; i++) {
                         listModel.addElement(eng.getMessageGet(i));
                     }

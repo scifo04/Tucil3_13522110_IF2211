@@ -55,8 +55,9 @@ public class Node {
             container.add(containerNode.info);
         }
         for (int i = container.size()-1; i >= 0; i--) {
-            System.out.println(container.get(i));
+            System.out.print(container.get(i)+" ");
         }
+        System.out.println();
     }
 
     public int getSize() {

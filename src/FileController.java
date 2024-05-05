@@ -7,7 +7,7 @@ public class FileController {
         HashMap<String,Boolean> temp = new HashMap<String,Boolean>();
         String placer;
         try {
-            File diction = new File("../dictionary(1).txt");
+            File diction = new File("../tc.txt");
             Scanner reader = new Scanner(diction);
             while (reader.hasNextLine()) {
                 placer = reader.nextLine();
